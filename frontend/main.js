@@ -10,9 +10,9 @@ const GetVisitCount = () =>{
         return response.json()
     }).then(respone => {
         console.log("Website called function API successfully");
-        count =respone.count; 
+        count = respone.count; 
         document.getElementById("coutner").innerText = count;
-    }).catch(function(error()){
-        console.log(console.error);
-    }
+    }).catch(function(error){
+        console.log(error);
+    });
 }
